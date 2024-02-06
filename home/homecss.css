@@ -130,12 +130,12 @@ nav a:hover {
     height: 650px;
 }
 .about-us h2 {
-    font-size: 36px;
+    font-size: 45px;
     margin-bottom: 10px;
 }
   
 .about-us p {
-    font-size: 16px;
+    font-size: 24px;
     line-height: 1.6;
     margin-bottom: 15px;
 }
@@ -149,7 +149,77 @@ nav a:hover {
     text-decoration: underline;
 }
 .container {
-    background-color: rgba(255, 255, 255, 0.7); 
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.75); 
     border-radius: 10px;
+    height: 600px;
+    width: 1200px;
     z-index: 2;
+    padding: 2px;
   }
+
+
+.buttondonate{
+  appearance: button;
+  background-color: #31322e;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round,sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 150px;
+}
+
+.buttondonate:after {
+  background-clip: padding-box;
+  background-color: #caf61c;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.buttondonate:main,
+.buttondonate:focus {
+  user-select: auto;
+}
+
+.buttondonate:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+.buttondonate:disabled {
+  cursor: auto;
+}
+
+.buttondonate:active {
+  border-width: 4px 0 0;
+  background: none;
+}
