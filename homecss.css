@@ -9,7 +9,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #a2fac1;
+    background: #d8ffe5;
     color: #010101;
 }
 
@@ -18,7 +18,7 @@ section {
 }
 
 section:nth-child(odd) {
-    background: #a2fac1;
+    background: #d8ffe5;
 }
 body {
     font-family: 'Arial', sans-serif;
@@ -35,7 +35,7 @@ header {
 }
 
 .navbar{
-    background: linear-gradient(90deg, rgb(22, 129, 14) 0%, rgba(64,197,91,1) 35%, rgba(85,226,255,1) 100%);height: fit-content;
+    background: linear-gradient(90deg, rgb(22, 129, 14) 0%, rgb(91, 198, 112) 35%, rgba(85,226,255,1) 100%);height: fit-content;
      font-family: calibri; padding-right: 15px;padding-left: 15px;
      position: fixed;
      top: 0;
@@ -45,10 +45,16 @@ header {
      z-index: 1000;
 }
 .navdiv{
-    display: flex; align-items: center; justify-content: space-between;
+    display:flex; align-items: center; justify-content: space-between;
 }
 .logo a{
-    font-size: 90px; font-weight: 550; color: rgb(255, 255, 255); text-shadow: 0px 2px 2px rgb(0, 0, 0);text-decoration: none;
+    font-size: 80px; font-weight: 550; color: rgb(255, 255, 255);
+     text-shadow: 0px 2px 2px rgb(0, 0, 0);text-decoration: none;
+}
+.logo img{
+    height:100px;
+    width: 200px;
+    
 }
 li{
     list-style: none; display: inline-block;
@@ -58,31 +64,21 @@ li a{
     text-decoration: none;
 }
 .buttonsign{
-    background-color: #c2fbd7;
-    border-radius: 100px;
-    box-shadow: rgba(44, 187, 99, .2)
-     0 -25px 18px -14px inset,
-     rgba(44, 187, 99, .15) 0 1px 2px,
-     rgba(44, 187, 99, .15) 0 2px 4px,
-     rgba(44, 187, 99, .15) 0 4px 8px,
-     rgba(44, 187, 99, .15) 0 8px 16px,
-     rgba(44, 187, 99, .15) 0 16px 32px;
-    color: rgb(54, 32, 165);
+    background-color: #069a46;
+    color: #fff;
+    font-size: 13px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
     cursor: pointer;
-    display: inline-block;
-    font-family: calibri;
-    padding: 7px 20px;
-    text-align: center;
-    text-decoration: none;
-    transition: all 250ms;
-    border: 0;
-    font-size: 18px;
-    font-weight: bold;
-    touch-action: manipulation;
   }
   .buttonsign:hover {
-    box-shadow: rgba(25, 242, 220, 0.86) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(255, 255, 255, 0.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
-    transform: scale(1.1) rotate(-1deg);
+    box-shadow:#000000;
+    transform: scale(0.9) rotate(-1deg);
   }
 nav a:hover {
     color: #111;
@@ -97,7 +93,7 @@ nav a:hover {
 }
 
 .home {
-    background-color: #a2fac1 ;
+    background-color: #d8ffe5 ;
     display: flex;
     justify-content:space-between;
     padding: 10px;
@@ -105,9 +101,11 @@ nav a:hover {
     margin:105px auto 0 auto;
 }
 .home img {
-    height:535px;
     border-radius: 30px;
     border: 2px solid #171717a1;
+    float: right;
+    height: 535px;
+    width: 900px;
 }
 
 .home p {
@@ -162,49 +160,23 @@ nav a:hover {
 
 
 .buttondonate{
-  appearance: button;
-  background-color: #31322e;
-  border: solid transparent;
-  border-radius: 16px;
-  border-width: 0 0 4px;
-  box-sizing: border-box;
-  color: #000000;
-  cursor: pointer;
-  display: inline-block;
-  font-family: din-round,sans-serif;
-  font-size: 15px;
-  font-weight: 700;
-  letter-spacing: .8px;
-  line-height: 20px;
-  margin: 0;
-  outline: none;
-  overflow: visible;
-  padding: 13px 16px;
-  text-align: center;
-  text-transform: uppercase;
-  touch-action: manipulation;
-  transform: translateZ(0);
-  transition: filter .2s;
-  user-select: none;
-  -webkit-user-select: none;
-  vertical-align: middle;
-  white-space: nowrap;
-  width: 150px;
+    background-color: #fff536;
+    color: #000000;
+    font-size: 13px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .buttondonate:after {
-  background-clip: padding-box;
-  background-color: #caf61c;
-  border: solid transparent;
-  border-radius: 16px;
-  border-width: 0 0 4px;
-  bottom: -4px;
-  content: "";
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: -1;
+    box-shadow:#000000;
+    transform: scale(0.9) rotate(-1deg);
 }
 
 .buttondonate:main,
@@ -225,3 +197,97 @@ nav a:hover {
   border-width: 4px 0 0;
   background: none;
 }
+.main{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+.main h1 {
+      font-size: 45px;
+      font-weight: 800;
+      text-align: center;
+  }
+  
+img {
+    height: 290px;
+    max-width: 100%;
+    vertical-align: middle;
+  }
+  
+  .btn {
+    color: #ffffff;
+    padding: 0.8rem;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    font-weight: 400;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: transparent;
+  }
+  
+  .btn:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .cards_item {
+    flex: 1 0 33%; 
+    height: 500px; 
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+  
+  @media (min-width: 40rem) {
+    .cards_item {
+      width: 50%;
+    }
+  }
+  
+  @media (min-width: 56rem) {
+    .cards_item {
+      width: 33.3333%;
+    }
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 100%; 
+  }
+  
+  .card_content {
+    padding: 1rem;
+    background: linear-gradient(to bottom left, #50d171 40%, #39c87c 100%);
+    height: 100%;
+  }
+  
+  .card_title {
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin: 0px;
+  }
+  
+  .card_text {
+    color: #ffffff;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;    
+    font-weight: 400;
+  }
