@@ -35,7 +35,8 @@ header {
 }
 
 .navbar{
-    background: linear-gradient(90deg, rgb(22, 129, 14) 0%, rgb(91, 198, 112) 35%, rgba(85,226,255,1) 100%);height: fit-content;
+    background: linear-gradient(90deg, rgb(34, 167, 25) 5%, rgb(93, 196, 200) 100%);
+    height: fit-content;
      font-family: calibri; padding-right: 15px;padding-left: 15px;
      position: fixed;
      top: 0;
@@ -97,15 +98,18 @@ nav a:hover {
     display: flex;
     justify-content:space-between;
     padding: 10px;
-    width: 100%;
-    margin:105px auto 0 auto;
+    width:auto;
+    margin:105px auto 0 0;
 }
 .home img {
     border-radius: 30px;
-    border: 2px solid #171717a1;
-    float: right;
-    height: 535px;
-    width: 900px;
+    border: 1px solid #ffffffa1;
+    float: left;
+    height: 490px;
+    width: 700px;
+    box-shadow: rgb(67, 77, 38) 0px 20px 30px -10px;
+    margin-left: 10px;
+    
 }
 
 .home p {
@@ -113,9 +117,10 @@ nav a:hover {
     margin-right: 15px;
 }
 .home h1{
+    font-family:Arial, Helvetica, sans-serif;
     font-size: 120px;
     color:#111;
-    text-align: center;
+    margin-left: 10px;
     font-weight: 900;
     font-style: bold;
 }
@@ -210,11 +215,11 @@ nav a:hover {
   
 img {
     height: 290px;
-    max-width: 100%;
+    width: 100%;
     vertical-align: middle;
   }
   
-  .btn {
+.btn {
     color: #ffffff;
     padding: 0.8rem;
     font-size: 14px;
@@ -226,6 +231,7 @@ img {
     cursor: pointer;
     border: 1px solid rgba(255, 255, 255, 0.2);
     background: transparent;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   }
   
   .btn:hover {
@@ -261,12 +267,14 @@ img {
   
   .card {
     background-color: white;
-    border-radius: 0.25rem;
+    border-radius: 0.55rem;
     box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    height: 100%; 
+    height: 100%;
+    border: 1px solid #0000008b;
+    
   }
   
   .card_content {
@@ -276,7 +284,7 @@ img {
   }
   
   .card_title {
-    color: #ffffff;
+    color: #000000;
     font-size: 1.3rem;
     font-weight: 700;
     letter-spacing: 1px;
@@ -285,9 +293,86 @@ img {
   }
   
   .card_text {
-    color: #ffffff;
+    color: #0b0b0b;
     font-size: 0.95rem;
     line-height: 1.5;
     margin-bottom: 1.25rem;    
     font-weight: 400;
-  }
+}
+.donate {
+    background-color: #d8ffe5 ;
+    display: flex;
+    justify-content:space-evenly;
+    padding: 10px;
+    width:auto;
+    margin:105px auto 0 0;
+}
+.donate img {
+    border-radius: 30px;
+    border: 1px solid #ffffffa1;
+    float:right;
+    height: 480px;
+    width: 600px;
+    box-shadow: rgb(67, 77, 38) 0px 20px 30px -10px;
+    margin-left: 10px;
+    
+}
+
+.donate p {
+    color: rgb(0, 0, 0);
+    margin-right: 15px;
+}
+.donate h1{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    color:#111;
+    margin-left: 90px;
+    font-weight: 800;
+    font-style: bold;
+}
+.donate h2{
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 35px;
+  color:#111;
+  margin-left: 90px;
+  font-weight: 800;
+  font-style: bold;
+}
+.buttondonatelarge{
+  background-color: #f4ea2d;
+  color: #000000;
+  font-size: 20px;
+  padding: 10px 45px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.buttondonatelarge:after {
+  box-shadow:#000000;
+  transform: scale(0.9) rotate(-1deg);
+}
+
+.buttondonatelarge:main,
+.buttondonatelarge:focus {
+user-select: auto;
+}
+
+.buttondonatelarge:hover:not(:disabled) {
+filter: brightness(1.1);
+-webkit-filter: brightness(1.1);
+}
+
+.buttondonatelarge:disabled {
+cursor: auto;
+}
+
+.buttondonatelarge:active {
+border-width: 4px 0 0;
+background: none;
+}
