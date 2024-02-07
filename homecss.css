@@ -9,7 +9,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #ffffff;
+    background: #a2fac1;
     color: #010101;
 }
 
@@ -18,13 +18,13 @@ section {
 }
 
 section:nth-child(odd) {
-    background: #ffffff;
+    background: #a2fac1;
 }
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+
 }
 
 header {
@@ -97,7 +97,7 @@ nav a:hover {
 }
 
 .home {
-    background-color: #ffffff ;
+    background-color: #a2fac1 ;
     display: flex;
     justify-content:space-between;
     padding: 10px;
@@ -118,6 +118,8 @@ nav a:hover {
     font-size: 120px;
     color:#111;
     text-align: center;
+    font-weight: 900;
+    font-style: bold;
 }
 .about-us {
     width: 100%;
