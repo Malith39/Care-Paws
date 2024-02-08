@@ -48,6 +48,12 @@ header {
 .navdiv{
     display:flex; align-items: center; justify-content: space-between;
 }
+.navdiv ul li a:hover {
+  color: #000000;
+}
+.navdiv ul li a{
+  color: #ffffff;
+}
 .logo a{
     font-size: 80px; font-weight: 550; color: rgb(255, 255, 255);
      text-shadow: 0px 2px 2px rgb(0, 0, 0);text-decoration: none;
@@ -104,11 +110,11 @@ nav a:hover {
 .home img {
     border-radius: 30px;
     border: 1px solid #ffffffa1;
-    float: left;
     height: 490px;
     width: 700px;
     box-shadow: rgb(67, 77, 38) 0px 20px 30px -10px;
     margin-left: 10px;
+    float: right;
     
 }
 
@@ -229,7 +235,7 @@ img {
     display: block;
     width: 100%;
     cursor: pointer;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(122, 119, 119, 0.2);
     background: transparent;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   }
@@ -266,14 +272,14 @@ img {
   }
   
   .card {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.625);
     border-radius: 0.55rem;
     box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: column;
     overflow: hidden;
     height: 100%;
-    border: 1px solid #0000008b;
+    border: 1px solid #ffffff8b;
     
   }
   
@@ -302,7 +308,7 @@ img {
 .donate {
     background-color: #d8ffe5 ;
     display: flex;
-    justify-content:space-evenly;
+    justify-content:space-between;
     padding: 10px;
     width:auto;
     margin:105px auto 0 0;
@@ -314,7 +320,7 @@ img {
     height: 480px;
     width: 600px;
     box-shadow: rgb(67, 77, 38) 0px 20px 30px -10px;
-    margin-left: 10px;
+    margin-left: 50px;
     
 }
 
@@ -332,10 +338,10 @@ img {
 }
 .donate h2{
   font-family:Arial, Helvetica, sans-serif;
-  font-size: 35px;
+  font-size: 25px;
   color:#111;
   margin-left: 90px;
-  font-weight: 800;
+  font-weight: 600;
   font-style: bold;
 }
 .buttondonatelarge{
@@ -376,3 +382,114 @@ cursor: auto;
 border-width: 4px 0 0;
 background: none;
 }
+
+.vets {
+    width: 100%;
+    max-width: auto;
+    margin: auto;
+    padding: 2px;
+    background:url(vetback.jpg) center/cover;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 650px;
+}
+.vets h2 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+  
+.vets  p {
+    font-size: 30px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+  
+.vets a {
+    color: #007bff;
+    text-decoration: none;
+}
+  
+.vets  a:hover {
+    text-decoration: underline;
+}
+#vets{
+  padding-top: 100px;
+}
+.vetbutton{
+  background-color: #1321ba;
+  color: #fff;
+  font-size: 13px;
+  padding: 10px 45px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.vetbutton:hover {
+  box-shadow:#000000;
+  transform: scale(1.2) rotate(-1deg);
+}
+.footer {
+  height: 200px;
+  text-align: center;
+  padding: 3px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 0, 0);
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 8px 4px;
+  color: #000000;
+}
+
+.fa:hover {
+    opacity: 0.9;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  padding: 10px;
+}
+
+.footer-section h2 {
+  font-size: 18px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+ul li a {
+  color: #000000;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  color: #4d28b3;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #8e44ad;
+}
+
