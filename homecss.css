@@ -135,7 +135,7 @@ nav a:hover {
     max-width: auto;
     margin: auto;
     padding: 2px;
-    background:url(about.jpg) center/cover;
+    background:url(img/about.jpg) center/cover;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     height: 650px;
@@ -388,7 +388,7 @@ background: none;
     max-width: auto;
     margin: auto;
     padding: 2px;
-    background:url(vetback.jpg) center/cover;
+    background:url(img/vetback.jpg) center/cover;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     height: 650px;
