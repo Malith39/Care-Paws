@@ -1,5 +1,6 @@
 * {
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
@@ -101,8 +102,6 @@ nav a:hover {
 
 .home {
     background-color: #d8ffe5 ;
-    display: flex;
-    justify-content:space-between;
     padding: 10px;
     width:auto;
     margin:105px auto 0 0;
@@ -113,22 +112,36 @@ nav a:hover {
     height: 490px;
     width: 700px;
     box-shadow: rgb(67, 77, 38) 0px 20px 30px -10px;
-    margin-left: 10px;
-    float: right;
+    margin-left: 30px;
     
 }
 
 .home p {
     color: rgb(0, 0, 0);
-    margin-right: 15px;
+    font-size: 100px;
 }
-.home h1{
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 120px;
-    color:#111;
-    margin-left: 10px;
-    font-weight: 900;
-    font-style: bold;
+.test{
+  display: flex;
+  align-items: center;
+}
+
+.x{
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.x p{
+  font-family:Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-weight: 900;
+  font-style: bold;
+}
+.x span{
+  font-weight: 700;
+  font-style: bold;
+  font-size: 35px;
 }
 .about-us {
     width: 100%;
