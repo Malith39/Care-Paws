@@ -225,6 +225,11 @@ nav a:hover {
     max-width: 1200px;
     margin: 0 auto;
   }
+
+.main ul{
+  display: flex;
+  /* column-gap: 50px; */
+}
   
 .main h1 {
       font-size: 45px;
@@ -239,18 +244,19 @@ img {
   }
   
 .btn {
-    color: #ffffff;
+    color: #000000;
     padding: 0.8rem;
-    font-size: 14px;
-    text-transform: uppercase;
-    border-radius: 4px;
-    font-weight: 400;
+    font-size: 17px;
+    border-radius: 25px;
+    font-weight: 700;
     display: block;
-    width: 100%;
+    width: 30%;
     cursor: pointer;
-    border: 1px solid rgba(122, 119, 119, 0.2);
-    background: transparent;
+    /* border: 1px solid rgb(122, 119, 119); */
+    background: rgb(192, 248, 207);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
   }
   
   .btn:hover {
@@ -270,36 +276,34 @@ img {
     height: 500px; 
     padding: 1rem;
     box-sizing: border-box;
-  }
+    
+  } 
   
-  @media (min-width: 40rem) {
-    .cards_item {
-      width: 50%;
-    }
+  .cards_item:hover {
+    scale: 1.05;
   }
-  
-  @media (min-width: 56rem) {
-    .cards_item {
-      width: 33.3333%;
-    }
-  }
+
   
   .card {
     background-color: rgba(255, 255, 255, 0.625);
-    border-radius: 0.55rem;
-    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+               rgba(0, 0, 0, 0.22) 0px 10px 10px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
     height: 100%;
-    border: 1px solid #ffffff8b;
+    
     
   }
   
   .card_content {
-    padding: 1rem;
-    background: linear-gradient(to bottom left, #50d171 40%, #39c87c 100%);
+    background: rgba(35, 216, 38, 0.63);
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   
   .card_title {
