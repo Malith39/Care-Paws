@@ -1,5 +1,6 @@
 * {
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
@@ -101,8 +102,6 @@ nav a:hover {
 
 .home {
     background-color: #d8ffe5 ;
-    display: flex;
-    justify-content:space-between;
     padding: 10px;
     width:auto;
     margin:105px auto 0 0;
@@ -113,22 +112,36 @@ nav a:hover {
     height: 490px;
     width: 700px;
     box-shadow: rgb(67, 77, 38) 0px 20px 30px -10px;
-    margin-left: 10px;
-    float: right;
+    margin-left: 30px;
     
 }
 
 .home p {
     color: rgb(0, 0, 0);
-    margin-right: 15px;
+    font-size: 100px;
 }
-.home h1{
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 120px;
-    color:#111;
-    margin-left: 10px;
-    font-weight: 900;
-    font-style: bold;
+.test{
+  display: flex;
+  align-items: center;
+}
+
+.x{
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.x p{
+  font-family:Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-weight: 900;
+  font-style: bold;
+}
+.x span{
+  font-weight: 700;
+  font-style: bold;
+  font-size: 35px;
 }
 .about-us {
     width: 100%;
@@ -212,6 +225,10 @@ nav a:hover {
     max-width: 1200px;
     margin: 0 auto;
   }
+
+.main ul{
+  display: flex;
+}
   
 .main h1 {
       font-size: 45px;
@@ -226,18 +243,19 @@ img {
   }
   
 .btn {
-    color: #ffffff;
+    color: #000000;
     padding: 0.8rem;
-    font-size: 14px;
-    text-transform: uppercase;
-    border-radius: 4px;
-    font-weight: 400;
+    font-size: 17px;
+    border-radius: 25px;
+    font-weight: 700;
     display: block;
-    width: 100%;
+    width: 30%;
     cursor: pointer;
-    border: 1px solid rgba(122, 119, 119, 0.2);
-    background: transparent;
+    /* border: 1px solid rgb(122, 119, 119); */
+    background: rgb(192, 248, 207);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
   }
   
   .btn:hover {
@@ -257,36 +275,34 @@ img {
     height: 500px; 
     padding: 1rem;
     box-sizing: border-box;
-  }
+    
+  } 
   
-  @media (min-width: 40rem) {
-    .cards_item {
-      width: 50%;
-    }
+  .cards_item:hover {
+    scale: 1.05;
   }
-  
-  @media (min-width: 56rem) {
-    .cards_item {
-      width: 33.3333%;
-    }
-  }
+
   
   .card {
     background-color: rgba(255, 255, 255, 0.625);
-    border-radius: 0.55rem;
-    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+               rgba(0, 0, 0, 0.22) 0px 10px 10px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
     height: 100%;
-    border: 1px solid #ffffff8b;
+    
     
   }
   
   .card_content {
-    padding: 1rem;
-    background: linear-gradient(to bottom left, #50d171 40%, #39c87c 100%);
+    background: rgba(35, 216, 38, 0.63);
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   
   .card_title {
