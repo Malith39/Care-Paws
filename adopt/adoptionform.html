@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="form.css">
+    <title>Care Paws</title>
+</head>
+<body>
+        <div class="registration-form">
+            <h2>Adoption Form</h2>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city" required>
+                </div>
+                <div class="form-group" style="display: flex;">
+                    <label for="gender">Gender:</label>
+                    <div>
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male" style="padding-left: 13px;">Male</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="female" name="gender" value="female" required>
+                        <label for="female" style="padding-left: 15px;">Female</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="other" name="gender" value="other" required>
+                        <label for="other" style="padding-left: 12px;">Other</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="pet-type">Pet Type:</label>
+                    <select id="pet-type" name="pet-type" required>
+                        <option value="" disabled selected>Select Pet Type</option>
+                        <option value="dog">Dog</option>
+                        <option value="cat">Cat</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message (optional):</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="space-for-pet">Do you have a place and space for a pet?</label>
+                    <label for="space-for-pet" style="padding-top: 10px;"><input type="checkbox" id="space-for-pet" name="space-for-pet">Yes, I have a place and space for a pet</label>
+                </div>
+                <div class="form-group">
+                    <label for="agree-for-conditions" style="font-size: 16px;"><input type="checkbox" id="agree-for-conditions" name="agree-for-conditions">I have read and agree to all the coditions and terms of Care Paws Org</label>
+                </div>
+                <button type="submit" class="button">Submit</button>
+            </form>
+        </div>
+    </section>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h2>Contact Us</h2>
+            <p>Email: support@carepaws.com</p>
+            <p>Phone: +1 132 556 6890</p>
+        </div>
+        <div class="footer-section">
+            <h2>Social</h2>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-google"></a>
+        <a href="#" class="fa fa-youtube"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="">Tech Support</a></li>
+                <li><a href="">Downloads</a></li>
+                <li><a href="">FAQs</a></li>
+                <li><a href="">About Us</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Care-Paw Devepers</p>
+    </div>
+</body>
+</html>

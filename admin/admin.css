@@ -85,8 +85,12 @@ ul li a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: solid 0.5px;
-  
+  border: solid 0.5px;  
+}
+
+.card:hover {
+   scale: 1.05;
+   transition-duration: 1s;
 }
 
 .card h2 {
