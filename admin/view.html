@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/logo.ico" type="image/x-icon">
+    <title>Care Paws</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background:url(wall.jpg);
+            background-position: center;
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            background-color: #ffffff6d;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px 0px rgba(24, 27, 191, 0.637);
+        }
+        h1 {
+            text-align: center;
+            color: #000000;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>User Details</h1>
+        <?php
+            $conn = new mysqli('localhost', 'root', '', 'malith');
+            if ($conn->connect_error) {
+                die("Connection Failed: " . $conn->connect_error);
+            }
+
+            $result = $conn->query("SELECT * FROM student");
+
+            if ($result->num_rows > 0) {
+                echo "<table>";
+                echo "<tr><th>ID</th><th>Name</th><th>Age</th><th>Address</th><th>Mobile</th></tr>";
+
+                while ($row = $result->fetch_assoc()) {
+                    echo "<tr>";
+                    echo "<td>" . $row['regno'] . "</td>";
+                    echo "<td>" . $row['st_name'] . "</td>";
+                    echo "<td>" . $row['st_age'] . "</td>";
+                    echo "<td>" . $row['st_address'] . "</td>";
+                    echo "<td>" . $row['mobile'] . "</td>";
+                    echo "</tr>";
+                }
+
+                echo "</table>";
+            } else {
+                echo "No records found.";
+            }
+
+            $conn->close();
+        ?>
+    </div>
+</body>
+</html>
